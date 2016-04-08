@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Bogota',
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY', 'sUaRZOcDTePV3yPElZThVb35694GwJ8zUSawJDgp6g0='),
 
     'cipher' => 'AES-256-CBC',
 
