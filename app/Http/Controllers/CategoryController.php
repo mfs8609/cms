@@ -86,6 +86,7 @@ class CategoryController extends Controller {
 		$category = Category::findOrFail($id);
 
 		$category->name = $request->input("name");
+		$category->slug = str_slug($request->input("name"), "-");
 
 		$category->save();
 
