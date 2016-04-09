@@ -19,6 +19,7 @@
                         <tr>
                             <th>ID</th>
                             <th>NAME</th>
+                            <th>SLUG</th>
                             <th class="text-right">OPTIONS</th>
                         </tr>
                     </thead>
@@ -28,6 +29,7 @@
                             <tr>
                                 <td>{{$category->id}}</td>
                                 <td>{{$category->name}}</td>
+                                <td>{{$category->slug}}</td>
                                 <td class="text-right">
                                     <a class="btn btn-xs btn-primary" href="{{ route('categories.show', $category->id) }}"><i class="glyphicon glyphicon-eye-open"></i> View</a>
                                     <a class="btn btn-xs btn-warning" href="{{ route('categories.edit', $category->id) }}"><i class="glyphicon glyphicon-edit"></i> Edit</a>

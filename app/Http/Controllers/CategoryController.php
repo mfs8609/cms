@@ -41,6 +41,7 @@ class CategoryController extends Controller {
 		$category = new Category();
 
 		$category->name = $request->input("name");
+		$category->slug = str_slug($request->input("name"), "-");
 
 		$category->save();
 
