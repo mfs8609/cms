@@ -18,4 +18,8 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
-Route::resource("categories","CategoryController");
+
+Route::group(['middleware' => 'auth'], function(){
+	Route::resource("categories","CategoryController");	
+});
+
